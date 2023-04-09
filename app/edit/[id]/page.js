@@ -1,5 +1,4 @@
-export default function page({params}) {
-  return (
-    <div>Editando Tarea {params.id}</div>
-  )
-}
+
+import NewFormPage from '../../new/page' ;
+
+export default  NewFormPage ;

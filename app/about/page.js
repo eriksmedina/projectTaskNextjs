@@ -1,7 +1,10 @@
-import React from 'react'
+"use client"
+
+import {useTasks} from '../../context/TaskContext';
 
 export default function page() {
-  return (
-    <div>Erik S. Medina G.</div>
-  )
+    const  {tasks} = useTasks();
+    return (
+        <div>Erik S. Medina G.</div>
+    )
 }

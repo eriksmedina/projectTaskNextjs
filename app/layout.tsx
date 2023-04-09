@@ -1,3 +1,4 @@
+import { Navbar } from "../components/Navbar" ;
 import { TaskProvider } from "../context/TaskContext";
 import './globals.css'
 
@@ -14,7 +15,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <TaskProvider> {children} </TaskProvider></body>
+        <TaskProvider> 
+          <Navbar />
+          {children} 
+        </TaskProvider></body>
     </html>
   )
 }
