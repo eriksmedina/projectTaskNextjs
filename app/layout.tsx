@@ -1,5 +1,7 @@
 import { Navbar } from "../components/Navbar" ;
 import { TaskProvider } from "../context/TaskContext";
+import { Toaster } from "./Toaster";
+import { Layout } from "../components/Layout";
 import './globals.css'
 
 export const metadata = {
@@ -13,12 +15,14 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body>
         <TaskProvider> 
           <Navbar />
-          {children} 
-        </TaskProvider></body>
+            <Layout>{children}</Layout>          
+          <Toaster />
+        </TaskProvider>
+      </body>
     </html>
   )
 }
